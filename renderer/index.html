@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>farangis</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h2 class="title__info">فرنگیس</h2>
+      <h4 class="title__description">بهت کمک میکنه پوشه هارو زودتر بسازی!</h4>
+    </div>
+    <div class="main">
+      <div class="main__name">
+        <label class="main__name-content">نام پوشه:</label>
+        <input type="text" id="folderName" placeholder="مثلا توت فرنگی" />
+      </div>
+
+      <div class="main__name">
+        <div>
+          <label class="main__name-content">عدد شروع:</label>
+          <input type="number" id="startNum" placeholder="مثلا 1" />
+        </div>
+        <div>
+          <label class="main__name-content">عدد پایان:</label>
+          <input type="number" id="endNum" placeholder="مثلا 100" />
+        </div>
+      </div>
+      <div class="main__name">
+        <label class="main__name-content">آدرس ساخت:</label>
+        <input
+          type="text"
+          id="basePath"
+          placeholder="مسیر ساخت پوشه"
+          readonly
+        />
+        <button id="browseBtn" class="main__button-br">📂 انتخاب پوشه</button>
+      </div>
+
+      <div style="text-align: center; margin-top: 12px">
+        <button id="createBtn" class="main__button-br">ساخت پوشه‌ها</button>
+      </div>
+      <video
+        id="mainVideo"
+        class="video"
+        width="350"
+        autoplay
+        muted
+        loop
+        style="display: block; margin: 16px auto"
+      >
+        <source src="video/video1.mp4" type="video/mp4" />
+        مرورگر شما از ویدئو پشتیبانی نمی‌کند.
+      </video>
+    </div>
+
+    <div id="warningModal2" class="modal-center">
+      <div class="modal-box">
+        <p id="warningText2" style="font-weight: bold; margin-bottom: 8px">
+          نام پوشه شامل کاراکترهای غیرمجاز است! لطفا از کاراکترهای \ / : * ? "
+          &lt; &gt; | استفاده نکنید.
+        </p>
+        <video id="warningVideo2" width="250" muted loop   class="video">
+          <source src="video/video.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <button
+          id="closeWarning2"
+          class="main__button-br"
+          style="margin-top: 10px"
+        >
+          باشه
+        </button>
+      </div>
+    </div>
+
+    <!-- مودال: فیلدها کامل نشده -->
+    <div id="warningModal" class="modal-center">
+      <div class="modal-box">
+        <p style="font-weight: bold; margin-bottom: 8px">
+          لطفاً همه فیلدها را پر کنید
+        </p>
+        <video id="warningVideo" width="250" muted loop   class="video">
+          <source src="video/video.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <button
+          id="closeWarning"
+          class="main__button-br"
+          style="margin-top: 10px"
+        >
+          باشه
+        </button>
+      </div>
+    </div>
+
+    <!-- مودال: موفقیت -->
+    <div id="successModal" class="modal-center">
+      <div class="modal-box">
+        <p id="successText" style="font-weight: bold; margin-bottom: 8px">
+          پوشه‌ها با موفقیت ساخته شدند 🎉
+        </p>
+        <video id="successVideo" width="250" muted loop   class="video">
+          <source src="video/video3.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <button
+          id="closeSuccess"
+          class="main__button-br"
+          style="margin-top: 10px"
+        >
+          باشه
+        </button>
+      </div>
+    </div>
+
+   
+    <script src="renderer.js"></script>
+  </body>
+</html>
