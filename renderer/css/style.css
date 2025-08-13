@@ -37,7 +37,7 @@ button,
 input,
 select,
 textarea {
-  border: 2px solid rgb(5, 80, 74);
+  border: 2px solid #2d4f25;
   border-radius: 5px;
   font-family: "Shabnam", sans-serif;
 }
@@ -45,9 +45,9 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: none; 
-  border: 2px solid #287ea0; 
-  box-shadow: 0 0 5px rgba(86, 165, 189, 0.7); 
+  outline: none;
+  border: 2px solid #2d4f25;
+  box-shadow: 0 0 5px #5ea04f;
 }
 
 /* 🎥 ویدئوی پس‌زمینه اصلی */
@@ -66,34 +66,72 @@ body {
   direction: rtl;
   background: linear-gradient(
     to right,
-    rgb(177, 205, 206) 0%,
-    rgb(160, 195, 196) 40%,
-    rgb(190, 215, 216) 70%,
-    rgb(177, 205, 206) 100%
+    #e5fbe6 0%,
+    #d0f2ce 40%,
+    #c3e8b8 70%,
+    #b4ddb0 100%
   );
+
   padding: 0;
   margin: 0;
 }
-.title {
+#titlebar {
+  height: 40px;
+  background: linear-gradient(
+    to right,
+    #4f853d 0%,
+    #4a7a3b 40%,
+    #3c6630 70%,
+    #2d4f25 100%
+  );
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔹 وسط‌چین عمودی */
+  padding: 0 8px;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+#titlebar .buttons {
+  display: flex;
+  align-items: center; /* 🔹 وسط‌چین دکمه‌ها */
+}
+
+#titlebar .buttons button {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  line-height: 27px; /* 🔹 متن دقیق وسط عمودی */
+  text-align: center;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  border: 1.5px solid white;
+  -webkit-app-region: no-drag;
+  margin-left: 4px;
+}
+
+.logo {
   width: 420px;
   height: auto;
   margin: 0 auto;
 }
-.title__info {
-  font-size: 40px;
-  font-weight: bold;
-  color: rgb(5, 80, 74);
+.logo__img {
+  width: 180px;
+  height: 180px;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 0 auto;
 }
-.title__description {
-  font-size: 20px;
+.logo__description {
+  font-size: 17px;
   font-weight: bold;
-  color: rgb(9, 92, 85);
+  color: #c0241e;
   display: flex;
   justify-content: center;
-  margin: 25px;
+  margin-bottom: 10px;
 }
 .main {
   width: 420px;
@@ -109,7 +147,7 @@ body {
   gap: 8px;
 }
 .main__name-content {
-  color: rgb(4, 46, 42);
+  color: #2d4f25;
 }
 input[type="text"] {
   padding: 6px 8px;
@@ -122,7 +160,7 @@ input[type="number"] {
 .main__button-br {
   padding: 6px 12px;
   cursor: pointer;
-  color: rgb(4, 46, 42);
+  color: #2d4f25;
 }
 /*! notif */
 .modal-center {
@@ -138,13 +176,19 @@ input[type="number"] {
   z-index: 999;
 }
 .modal-box {
-  background: white;
+  background: linear-gradient(
+    to right,
+    #e5fbe6 0%,
+    #d0f2ce 40%,
+    #c3e8b8 70%,
+    #b4ddb0 100%
+  );
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   max-width: 320px;
 }
 .video {
-  border-radius: 5px; 
-  overflow: hidden; 
+  border-radius: 5px;
+  overflow: hidden;
 }
