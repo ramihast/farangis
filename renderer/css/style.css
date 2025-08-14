@@ -25,7 +25,7 @@
 }
 
 * {
-  font-weight: normal;
+  font-weight: bold;
   padding: 0;
   margin: 0;
   -webkit-user-select: none;
@@ -34,7 +34,12 @@ b,
 strong {
   font-weight: bold;
 }
-button,
+button {
+  border: 2px solid #ac3a3a;
+  font-family: "Shabnam", sans-serif;
+  border-radius: 5px;
+}
+
 input,
 select,
 textarea {
@@ -42,7 +47,11 @@ textarea {
   border-radius: 5px;
   font-family: "Shabnam", sans-serif;
 }
-button:focus,
+button:focus {
+  outline: none;
+  border: 2px solid #5e1f1f;
+  box-shadow: 0 0 5px #db9595;
+}
 input:focus,
 select:focus,
 textarea:focus {
@@ -75,6 +84,7 @@ body {
 
   padding: 0;
   margin: 0;
+  position: relative;
 }
 #titlebar {
   height: 40px;
@@ -113,6 +123,21 @@ body {
   -webkit-app-region: no-drag;
   margin-left: 4px;
 }
+.title__img {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+#btngit {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: -10px; /* منفی حذف شد */
+  left: 10px;
+  cursor: pointer;
+  z-index: 10; /* مطمئن شدن روی سایر المان‌ها */
+}
 
 .logo {
   width: 420px;
@@ -127,9 +152,9 @@ body {
   margin: 0 auto;
 }
 .logo__description {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  color: #c0241e;
+  color: #e25252;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -161,7 +186,9 @@ input[type="number"] {
 .main__button-br {
   padding: 6px 12px;
   cursor: pointer;
-  color: #2d4f25;
+  color: white;
+  background-color: #e25252;
+  font-weight: bold;
 }
 /*! notif */
 .modal-center {
