@@ -23,54 +23,13 @@
     url("../fonts/woff/Shabnam-Bold.woff") format("woff"),
     url("../fonts/eot/Shabnam-Bold.eot?#iefix") format("embedded-opentype");
 }
-
 * {
   font-weight: bold;
   padding: 0;
   margin: 0;
   -webkit-user-select: none;
 }
-b,
-strong {
-  font-weight: bold;
-}
-button {
-  border: 2px solid #ac3a3a;
-  font-family: "Shabnam", sans-serif;
-  border-radius: 5px;
-}
 
-input,
-select,
-textarea {
-  border: 2px solid #2d4f25;
-  border-radius: 5px;
-  font-family: "Shabnam", sans-serif;
-}
-button:focus {
-  outline: none;
-  border: 2px solid #5e1f1f;
-  box-shadow: 0 0 5px #db9595;
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border: 2px solid #2d4f25;
-  box-shadow: 0 0 5px #5ea04f;
-}
-
-/* 🎥 ویدئوی پس‌زمینه اصلی */
-#mainVideo {
-  border-radius: 5px;
-  width: 100%;
-  z-index: -10; /* پشت همه عناصر */
-}
-
-html {
-  padding: 0;
-  margin: 0;
-}
 body {
   font-family: "Shabnam", sans-serif;
   direction: rtl;
@@ -86,6 +45,36 @@ body {
   margin: 0;
   position: relative;
 }
+
+button {
+  border: 2px solid rgb(172, 57, 57);
+  font-family: "Shabnam", sans-serif;
+  border-radius: 5px;
+}
+input,
+select,
+textarea {
+  border: 2px solid rgb(45, 79, 37);
+  border-radius: 5px;
+  font-family: "Shabnam", sans-serif;
+}
+button:focus {
+  outline: none;
+  border: 2px solid rgb(94, 31, 31);
+  box-shadow: 0 0 5px rgb(219, 149, 149);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(45, 79, 37);
+  box-shadow: 0 0 5px rgb(94, 160, 79);
+}
+#mainVideo {
+  border-radius: 5px;
+  width: 100%;
+  z-index: -10;
+}
 #titlebar {
   height: 40px;
   background: linear-gradient(
@@ -95,26 +84,23 @@ body {
     #3c6630 70%,
     #2d4f25 100%
   );
-
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* 🔹 وسط‌چین عمودی */
+  align-items: center;
   padding: 0 8px;
   -webkit-user-select: none;
   -webkit-app-region: drag;
 }
-
 #titlebar .buttons {
   display: flex;
-  align-items: center; /* 🔹 وسط‌چین دکمه‌ها */
+  align-items: center;
 }
-
 #titlebar .buttons button {
   background: transparent;
   width: 30px;
   height: 30px;
-  line-height: 27px; /* 🔹 متن دقیق وسط عمودی */
+  line-height: 27px;
   text-align: center;
   color: white;
   font-size: 27px;
@@ -133,12 +119,11 @@ body {
   width: 100px;
   height: 50px;
   position: absolute;
-  bottom: -10px; /* منفی حذف شد */
+  bottom: -10px;
   left: 10px;
   cursor: pointer;
-  z-index: 10; /* مطمئن شدن روی سایر المان‌ها */
+  z-index: 10;
 }
-
 .logo {
   width: 420px;
   height: auto;
@@ -154,7 +139,7 @@ body {
 .logo__description {
   font-size: 20px;
   font-weight: bold;
-  color: #e25252;
+  color: rgb(226, 82, 82);
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -164,7 +149,6 @@ body {
   height: auto;
   margin: 0 auto;
 }
-
 .main__name {
   margin-bottom: 12px;
   display: flex;
@@ -173,7 +157,7 @@ body {
   gap: 8px;
 }
 .main__name-content {
-  color: #2d4f25;
+  color: rgb(45, 79, 37);
 }
 input[type="text"] {
   padding: 6px 8px;
@@ -187,7 +171,7 @@ input[type="number"] {
   padding: 6px 12px;
   cursor: pointer;
   color: white;
-  background-color: #e25252;
+  background-color: rgb(226, 82, 82);
   font-weight: bold;
 }
 /*! notif */
