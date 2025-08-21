@@ -17,8 +17,8 @@
 - **🛠️ نسخه نصبی**: نصب آسان روی ویندوز  
 - **💻 نسخه پورتابل**: بدون نیاز به نصب، اجرا مستقیم  (نسخه پیشنهادی)
 
-[دانلود نسخه نصبی](link-to-installer)  
-[دانلود نسخه پورتابل](link-to-portable)  
+[دانلود نسخه نصبی]([link-to-installer](https://github.com/ramihast/farangis/releases/download/v1.0.0/Farangis.Setup.1.0.0.rar))  
+[دانلود نسخه پورتابل]([link-to-portable](https://github.com/ramihast/farangis/releases/download/v1.0.0/Farangis.Setup.1.0.0.rar))  
 
 ## 🚀 استفاده
 
